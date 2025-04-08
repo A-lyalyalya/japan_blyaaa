@@ -13,10 +13,11 @@ body {
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 карточек в строке */
-  gap: 20px; /* Равные промежутки по горизонтали и вертикали */
+  gap: 20px; /* Равные промежутки между карточками */
   justify-content: center;
   justify-items: center;
-  row-gap: 20px; /* Равное расстояние по вертикали */
+  row-gap: 20px; /* Равные промежутки по вертикали */
+  margin-top: 20px; /* Отступ сверху для всех секций */
 }
 
 .card {
@@ -33,3 +34,12 @@ body {
   text-align: center;
 }
 
+/* Отступы между секциями */
+.page {
+  margin-bottom: 40px; /* Добавим больше пространства между секциями карточек */
+}
+
+/* Отступ под карточкой с имоутой */
+.page:last-child {
+  margin-bottom: 40px; /* Дополнительный отступ под последней секцией */
+}
